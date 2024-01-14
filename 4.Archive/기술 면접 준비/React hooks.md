@@ -1,0 +1,29 @@
+- hooks: react에서 상태, 사이드 이펙트, 메모이제이션 등을 관리해줄 수 있도록 API를 제공해주고 있음
+	- hook이 나온 목적은 상태로직 재사용
+	- HoC, render props 도 상태로직 재사용을 목적으로 하고 있으나 이런 패턴은 컴포넌트의 인터페이스 변경을 요구할 수 있음.
+		- 이런 패턴은 횡단관심사를 관리하기 좋은 패턴이라고 생각함
+- react hook의 장단점
+	- 장점
+		- 컴포넌트간 의존성 분리
+		- 컴포넌트 분리를 통한 독립성 => 모듈화
+		- 상태 로직 재사용을 통한 재사용성 높임
+	- 단점
+		- hook으로 인한 사이드이펙트를 예측하기 어려울 수 있음 => useScrollLocker
+			- https://medium.com/finda-tech/%ED%95%80%EB%8B%A4%EC%97%90%EC%84%9C-%EC%93%B0%EB%8A%94-react-custom-hooks-1a732ce949a5
+			- 실제로 hook을 잘못 사용하면 사이드 이펙트 문제가 발생함
+			- 공유될 수 있는 값을 hook으로 수정시 발생
+			- body에 overflow:hidden 스타일을 설정하는 것처럼 공유될 수 있는 값을 여러 컴포넌트가 동시에 수정하게 되면 예상하지 못한 버그 발생
+		- 컴포넌트 비대
+		- 컴포넌트가 도메인에 강결합할 수 있음
+		- js의 고급 문법을 알고 있어야함
+- hook을 위한 js의 고급기능
+	- 클로저와 배열
+	- 왜 함수 컴포넌트에서만 호출가능한가?
+		- 리액트가 상태를 관리해주기 위해
+	- 왜 hook은 조건문, 반복문에서 실행하면 안되는건가?
+		- **hook의 실행 순서가 일정해야 다름 렌더링에서 hook의 실행결과값을 보장해줄 수 있기 때문이다**
+		- **결국은 hook들은 배열로 관리가 되고 실행순서에 따라 hook의 결과를 배열에서 뽑아서 사용한다**
+	- setState => 상태변경 => trigger render => 다음 상태가 화면에 보임
+	- useState 동작원리 참고 문서
+		- https://react.dev/learn/state-a-components-memory#how-does-react-know-which-state-to-return
+		- https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/

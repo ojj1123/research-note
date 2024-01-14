@@ -1,0 +1,14 @@
+- 복잡해진 상태, 상태를 변경하는 로직이 이곳저곳에 흩어져 있음 -> reducer를 통해 상태 관리를 모아줄 수 있음
+- useState vs useReducer
+	- testing: reducer 는 순수함수 즉, 컴포넌트에 의존하지 않기 때문에 따로 테스팅할 수 있음
+- 
+
+- Migrate useState to useReducer
+	- setting state => dispatching action
+	- Write reducer function
+	- Use reducer
+- dispatching action
+	- 상태를 어떻게 바꿀지 action을 넘겨줌
+- reducer function
+	- `현재상태`와 `액션`을 받아 `다음 상태`를 반환하는 함수
+	- reducer 는 순수함수여야 한다 = 같은 input에 같은 output, 사이드 이펙트(timeout, 비동기 요청 등)가 없어야 함

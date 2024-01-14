@@ -1,0 +1,12 @@
+- Concurrent React의 핵심 -> 렌더링이 interrupible 하다
+	- Concurrent mode를 사용하지 않는 react의 렌더링은 렌더링 중간에 끊을 수 없다
+
+- 어떻게 single thread 환경의 자바스크립트에서 작업들을 스케쥴링할까?
+	- 렌더링이 어떻게 중단될까?
+	- 리액트는 어떻게 렌더링을 중단하고 main thread를 양보할까?
+	- 동시성 메커니즘 : 우선순위
+- 무엇을 기준으로 우선순위를 결정하는가?
+	- 17버전 이전에는 Expiration Time 기준으로 우선순위 정함
+	- 17버전 이후에는 [Lane model](Lane%20model.md)을 기반으로 우선순위 정함
+- [Concurrent](Concurrent.md)
+- [CPU-bound process and IO-bound process](CPU-bound%20process%20and%20IO-bound%20process.md)
