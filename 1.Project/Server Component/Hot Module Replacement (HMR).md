@@ -15,6 +15,6 @@ https://github.com/dai-shi/waku/issues/113
 - vite에 (오피셜 혹은 커뮤니티) 플러그인 중에 RSC에 대한 HMR을 지원하는 것이 있는지 확인해봐야 겠다. 없다면 만들어야 겠다.
 
 ## Next.js의 HMR 솔루션
-- Next.js 는 RSC에 대한 fast refresh 를 자체적으로 구현하고 있다. [](https://github.com/vercel/next.js/blob/fc25fcef3edc488c17ea6da7259a352e2dcca1d8/packages/next/src/server/dev/hot-reloader-webpack.ts#L186)
+- Next.js 는 RSC에 대한 fast refresh 를 자체적으로 구현하고 있다. [hot-reload-webpack 모듈](https://github.com/vercel/next.js/blob/fc25fcef3edc488c17ea6da7259a352e2dcca1d8/packages/next/src/server/dev/hot-reloader-webpack.ts#L186)
 - 어떤 모듈(컴포넌트 종류, 파일 종류 등)변경했는지에 따라 reload action 타입을 정의해두었다. [](https://github.com/vercel/next.js/blob/7c7d981b2d3b5a3025a0a4f17e82d2644e3b5286/packages/next/src/server/dev/hot-reloader-types.ts#L10-L26)
-- 또한 [](https://github.com/vercel/next.js/blob/7c7d981b2d3b5a3025a0a4f17e82d2644e3b5286/packages/next/src/server/dev/hot-reloader-webpack.ts#L86)하는 것으로 파악된다.
+- 또한 [hot-reloader-webpack 모듈](https://github.com/vercel/next.js/blob/7c7d981b2d3b5a3025a0a4f17e82d2644e3b5286/packages/next/src/server/dev/hot-reloader-webpack.ts#L86)하는 것으로 파악된다.
