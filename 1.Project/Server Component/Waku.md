@@ -9,10 +9,10 @@ https://waku.gg/blog/introducing-waku
 - lib - waku 메인 비즈니스 로직
 	- builder - dev or 빌드할 때 필요한 로직
 		- build.ts - dev에서 사용됨
-	- handlers
-		- 
+	- handlers - vite 플러그인 사용
+		- vite 플러그인을 사용하는 dev, prd 전용 핸들러 있음
 	- middleware
-	- plugins
+	- plugins - vite rsc 플러그인
 	- renderers
 	- utils
 	- config.ts
@@ -21,7 +21,7 @@ https://waku.gg/blog/introducing-waku
 	- common.ts
 	- server.ts - 라우팅을 정의 `createPages`, 레이아웃 정의 `createLayout`, defineEntries 에 의존
 - cli.ts - CLI 명령어 로직(dev, build, start)
-- client.ts - Root, Slot 컴포넌트, 클라이언트에서 서버컴포넌트 호출하는 로직
+- client.ts - Root, Slot 컴포넌트, **클라이언트에서 서버컴포넌트 호출하는 로직**
 - server.ts - defineEntries(서버컴포넌트 엔트리)
 - prd.ts
 	- lib/middleware/hono-prd.js
