@@ -81,7 +81,7 @@ startTransition(() => {
 });
 ```
 
-- [Lane model](../../1.Project/React18%20파헤치기/Lane%20model.md) 을 통해서 구현했다고 함
+- [Lane model](../../3.Resource/React18/Lane%20model.md) 을 통해서 구현했다고 함
 - 이런 Transition 기능은 Suspense와 결합해서 활용될 수 있음
 	- Suspense의 fallback을 보여주는 것 대신에 이전 결과값을 보여주어 사용자 경험을 해치지 않을 수 있다
 

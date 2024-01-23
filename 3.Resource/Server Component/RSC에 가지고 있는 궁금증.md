@@ -10,7 +10,7 @@
 
 - 개발자 도구
 - Framework ([Bundler](Bundler), [Router](Router.md) 통합)
-- 캐싱 (mutation, invalidate) => [Caching in Next.js](Caching%20in%20Next.js.md) (next.js 가 서버컴포넌트에 대해 어떤 캐시 레이어를 만들었는지?)
+- 캐싱 (mutation, invalidate) => [Caching in Next.js](../../3.Resource/Nextjs/Caching%20in%20Next.js.md) (next.js 가 서버컴포넌트에 대해 어떤 캐시 레이어를 만들었는지?)
 - refetch (pagination, particial refetch)
 - pre-rendering
 - SSG와 RSC와의 통합
