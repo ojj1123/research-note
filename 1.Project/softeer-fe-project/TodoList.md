@@ -34,5 +34,5 @@
 ## [2024-01-23](../../0.DailyNote/2024-01-23.md)
 - [ ] TODO
 	- [x] 카드 이동(drag & drop)
-	- [ ] json-server 구축
+	- [x] express mock server 구축
 	- [ ] 비동기 로직 작성(카드 등록, 삭제, 변경, 이동)
