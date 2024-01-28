@@ -8,8 +8,8 @@
 https://github.com/dai-shi/waku/issues/113
 ![스크린샷 2023-12-27 02.05.16](스크린샷%202023-12-27%2002.05.16.png)
 
-- [Waku](../../3.Resource/Waku.md) 에는 현재 RSC에 대한 HMR 지원하고 있지 않다. 단순히 full page reload를 지원해서 서버컴포넌트를 수정할 때 웹의 상태가 모두 날라간다
-- [Waku](../../3.Resource/Waku.md) 는 내부적으로 vite를 사용하고 있는데 vite의 HMR 모듈은 클라이언트 측의 HMR만 지원해준다
+- [README](../waku/README.md) 에는 현재 RSC에 대한 HMR 지원하고 있지 않다. 단순히 full page reload를 지원해서 서버컴포넌트를 수정할 때 웹의 상태가 모두 날라간다
+- [README](../waku/README.md) 는 내부적으로 vite를 사용하고 있는데 vite의 HMR 모듈은 클라이언트 측의 HMR만 지원해준다
 - 그래서 직접 [vite-plugin-rsc-reload](https://github.com/dai-shi/waku/blob/c599251c69add15be9ad1f7d42a4116deb66149d/packages/waku/src/lib/plugins/vite-plugin-rsc-reload.ts) 를 구현해두었다. 하지만 이는 full page reload 만 지원하고 있다.
 - Next.js는 RSC에 대한 fast refresh를 지원하고 있다. 어떻게 구현하고 있는지 참고해봐야 겠다. [Nextjs Docs Fast refresh](https://nextjs.org/docs/architecture/fast-refresh)
 - vite에 (오피셜 혹은 커뮤니티) 플러그인 중에 RSC에 대한 HMR을 지원하는 것이 있는지 확인해봐야 겠다. 없다면 만들어야 겠다.
