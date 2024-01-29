@@ -1,9 +1,12 @@
 # Waku issue
 - [ ] [Only DEV, FOUC Issue](Only%20DEV,%20FOUC%20Issue.md) [#344](https://github.com/dai-shi/waku/issues/344)
-	- [ ] 
 - [ ] RSC fest refresh [#113](https://github.com/dai-shi/waku/issues/113)
 	- [ ] related https://ko.vitejs.dev/guide/troubleshooting.html#hmr
 	- [ ] [Hot Module Replacement (HMR)](../../3.Resource/Server%20Component/Hot%20Module%20Replacement%20(HMR).md)
+- [ ] waku long loading issue with `react-mdx-remote`
+- [ ] test code
+
+---
 
 - [ ] 3000이 아닐 때 스타일 안먹음, 3000번으로 덮어써야 하는지 아니면 그대로 가야하는지
 	vite에서 default host를 localhost에서 127.0.0.1로 바꿈. 왜 바꿨는지 이해가 안감 [#8543](https://github.com/vitejs/vite/pull/8543)
