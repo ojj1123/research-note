@@ -31,7 +31,7 @@
 
 
 ## 진행
-- commit 기록들 확인
+- https://github.com/thismeme-team/thismeme-web/pull/84
 
 ## 트러블 슈팅
 ### `is not a valid JSX element type` error
