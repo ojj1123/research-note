@@ -3,7 +3,7 @@
 
 # Automatic batching
 [# Automatic batching for fewer renders in React 18](https://github.com/reactwg/react-18/discussions/21)
-- 리액트가 자동으로 상태 업데이트를 그룹화하는 것 => 여러번의 렌더링을 하나의 렌더링으로 합쳐 성능 최적화 가능
+- 리액트가 자동으로 상태 업데이트를 그룹화하는 것 => 여러번의 렌더링을 하나의 렌더링으로 합쳐 성능 #최적화  가능
 - Before React18
 	- 이전에는 batching이 이벤트 핸들러 내에서만 일어났음
 ```jsx
