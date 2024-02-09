@@ -31,5 +31,9 @@
 - [ ] 슬랙
 - [ ] 디스코드
 
-# Homebrew 트러블슈팅
+## Homebrew 트러블슈팅
 - [Brew not found 해결](https://designdepot.tistory.com/209)
+
+## Items2 + oh-my-zsh 설치
+- https://salmonpack.tistory.com/52
+- code 명령어로 vscode 켜기 https://www.lainyzine.com/ko/article/how-to-execute-visual-studio-code-from-terminal/
