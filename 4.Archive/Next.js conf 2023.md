@@ -1,5 +1,4 @@
-![nextjs-conf-2023](nextjs-conf-2023.mov)
-- https://nextjs.org/conf?s=d
+![nextjs-conf-2023](nextjs-conf-2023.mov)- https://nextjs.org/conf?s=d
 - vercel이 재미있는 Web UX를 준비했다.
 - 정말 소소한 게임이지만 vercel이라는 회사가 다르게 보인다.
 - 저 게임을 보고 두가지 정도 생각이 스쳐지나가는데,
