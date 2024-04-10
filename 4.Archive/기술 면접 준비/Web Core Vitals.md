@@ -1,4 +1,4 @@
-[](https://vercel.com/docs/speed-insights#core-web-vitals-explained)
+https://vercel.com/docs/speed-insights/metrics#core-web-vitals-explained
 
 # FCP(First contentful Paint)
 
