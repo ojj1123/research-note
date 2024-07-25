@@ -1,3 +1,10 @@
+---
+tags:
+  - pnpm
+  - yarn
+  - corepack
+---
+
 ## 기본 세팅
 
 - [ ] Apple ID 로그인 및 iCloud 세팅
@@ -20,8 +27,10 @@
 - [ ] Git 설치 & git config [참고](https://www.daleseo.com/git-config/)
 
 - [ ] node -> node -v
-- [ ] Yarn
-- [ ] Pnpm
+- [ ] #pnpm #yarn
+	- brew 설치 단점: 버전 변경을 해줄 수 없음. 관련 이슈
+	- 관련 이슈 [Support shipping pnpm via brew with versioned installs](https://github.com/pnpm/pnpm/issues/6903)
+	- nodejs의 [corepack](https://github.com/nodejs/corepack)을 사용하면 packageManager 를 따로 설치할 필요가 없음
 - [ ] Vite
 
 - [ ] 터미널 설정
